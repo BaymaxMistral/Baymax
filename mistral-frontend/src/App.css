@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  justify-content: end;
+  height: 100vh;
+  width: 100vw;
+  background-color: #171311;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Sider{
+
+}
+.VhLogo{
+  margin-right: 120px;
+  margin-top: 10px;
+  height: 35px;
+}
