@@ -1,0 +1,1 @@
+export const MistralUrl = 'https://api.dev.baymax.healthitplatform.com/'
