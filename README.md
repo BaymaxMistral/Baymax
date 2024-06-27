@@ -13,7 +13,7 @@ Instructions on how to use your project.
 - **.env**: Contains environment variables.
 - **model_inference.py**: Handles model inference logic.
 - **schemas.py**: Defines the data models.
-- **app.py**: Main application file with FastAPI endpoints.
+- **main.py**: Main application file with FastAPI endpoints.
 
 ## License
 Information about the project's license.
