@@ -15,9 +15,9 @@ body {
   .chat-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 98vh;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1290px;
     background-color: #171311;
     border-left: 1px solid #342f2e;
     overflow: hidden;

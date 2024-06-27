@@ -9,11 +9,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-.Sider{
 
-}
 .VhLogo{
-  margin-right: 120px;
-  margin-top: 10px;
-  height: 35px;
+  margin-right: 50px;
+  margin-top: 13px;
+  height: 32px;
+  width: auto;
 }
