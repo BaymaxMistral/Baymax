@@ -18,7 +18,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/drug-information-chatbot.git
+   git clone https://github.com/BaymaxMistral/Baymax.git
    ```
 
 2. Navigate to the project directory:
@@ -31,7 +31,7 @@ To run this project locally, follow these steps:
    pip install -r requirements.txt
    ```
 
-4. Set up the environment variables by creating a `.env` file in the `app` directory. Refer to the [Environment Variables](#environment-variables) section for details.
+4. Set up the environment variables by creating a `.env` file in the `app` directory.
 
 ## Usage
 
