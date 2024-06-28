@@ -1,8 +1,8 @@
-#Baymax
+# Baymax
 
 This project is a chatbot designed to provide information about various drugs. It uses the Mistral API with the open-mistral-7b model, fine-tuned on a dataset containing comprehensive drug-related information. Users can interact with the chatbot to obtain detailed and accurate drug information.
 
-##Table of Contents
+## Table of Contents
         Installation
         Usage
         Project Structure
@@ -10,7 +10,7 @@ This project is a chatbot designed to provide information about various drugs. I
         API Endpoints
         License
 
-###Installation
+### Installation
 
 To run this project locally, follow these steps:
 1. Clone the repository:
@@ -28,14 +28,14 @@ pip install -r requirements.txt
 
 
 
-###Usage
+### Usage
 To start the application, run the following command in the app directory:
 
 uvicorn main:app --reload
 
 This will start the FastAPI server on http://127.0.0.1:8000, where you can access the chatbot API.
 
-###Project Structure
+### Project Structure
 Backend/
 │
 └───app/
@@ -45,14 +45,14 @@ Backend/
     ├── schemas.py
     ├── main.py
 
-####Description of Each File
+#### Description of Each File
 
 .env: Contains environment variables needed for the application, such as the Mistral API key.
 model_inference.py: Handles the logic for running model inference. This includes loading the model and processing user inputs to generate responses.
 schemas.py: Defines the data models used in the application, ensuring that data exchanged between the client and server is validated and structured correctly.
 main.py: The main application file that sets up the FastAPI server and defines the endpoints for interacting with the chatbot.
 
-###API Endpoints
+### API Endpoints
 The application exposes the following API endpoints:
 GET /: A welcome message indicating that the API is running.
 POST /chat: Endpoint will send a message to the chatbot and receive a response. Expect a JSON payload with the user message.
