@@ -52,6 +52,8 @@ Backend/
     ├── model_inference.py
     ├── schemas.py
     ├── main.py
+    ├── requirements.txt
+
 ```
 
 ### Description of Each File
