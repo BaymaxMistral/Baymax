@@ -64,6 +64,14 @@ Backend/
 - **main.py**: The main application file that sets up the FastAPI server and defines the endpoints for interacting with the chatbot.
 
 
+## Environment Variables
+
+The application requires specific environment variables to function correctly. Create a `.env` file in the app directory and add the following:
+
+```bash
+MISTRAL_API_KEY=your_api_key_here
+```
+
 ## API Endpoints
 
 The application exposes the following API endpoints:
