@@ -11,7 +11,6 @@ This project is a chatbot designed to provide information about various drugs. I
 - [Project Structure](#project-structure)
 - [API Endpoints](#api-endpoints)
 - [Sample Quesiton](#sample-questions)
-- [License](#license)
 
 ## Installation
 
@@ -80,8 +79,5 @@ The application exposes the following API endpoints:
 - `Question 4`:
 - `Question 5`: 
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
