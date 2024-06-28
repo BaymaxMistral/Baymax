@@ -92,8 +92,6 @@ class Process_user_query:
         try:
             self.val_response = validation_chain.invoke({"query": user_query})
 
-            print("validation chain response : ",self.val_response)
-
         except Exception as error:
             raise HTTPException(
                 status_code=500, detail=f"Error :{error} | {base_dir}"
@@ -138,7 +136,6 @@ class Process_user_query:
         try:
             self.htlm_chain_response = response_html_chain.invoke({"text": text})
 
-            print("htlm_chain response : ",self.htlm_chain_response)
             return {"html_format_response":self.htlm_chain_response['html_format_content'], "status":200}
 
         except Exception as error:
