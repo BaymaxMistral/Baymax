@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './chatbot.css';
 import SendIcon from '@mui/icons-material/Send';
 import axios from 'axios';
+import {  notification } from 'antd';
 import Skeleton from '@mui/material/Skeleton';
 import TypeWriter from '../TypeWriter/TypeWriter'
 import { MistralUrl } from '../Constant';
@@ -11,6 +12,14 @@ const Chat = () => {
     const [input, setInput] = useState('');
     const chatWindowRef = useRef(null);
     const [Loading, setLoading] = useState(false)
+    const [api, contextHolder] = notification.useNotification();
+  const openNotificationWithIcon = (type) => {
+    api[type]({
+      message: 'API Error',
+      description:
+        '',
+    });
+  };
 
     const sendMessage = () => {
         setLoading(true)
@@ -33,13 +42,10 @@ const Chat = () => {
                     setLoading(false)
                     console.log(res.data.response)
                 })
-            // Simulate a bot response
-            // setTimeout(() => {
-            //     setMessages((prevMessages) => [
-            //         ...prevMessages,
-            //         { text: `${input}`, user: 'Bot' }
-            //     ]);
-            // }, 1000);
+                .catch((err) => {
+                    setLoading(false)
+                    openNotificationWithIcon('error')
+                })
         }
     };
 
@@ -62,6 +68,7 @@ const Chat = () => {
 
     return (
         <div className="chat-container">
+            {contextHolder}
             <div className="messages" ref={chatWindowRef}>
                 {
                     messages.length === 0 ?

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import HTMLReactParser from 'html-react-parser';
 
 const TypeWriter = ({ text }) => {
     const [displayText, setDisplayText] = useState('');
@@ -18,7 +19,7 @@ const TypeWriter = ({ text }) => {
       }, [currentIndex, text]);
 
     return (
-        <div>{displayText}</div>
+        <div>{HTMLReactParser(displayText)}</div>
     )
 }
 
