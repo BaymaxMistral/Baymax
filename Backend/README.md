@@ -9,6 +9,7 @@ This project is a chatbot designed to provide information about various drugs. I
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
+- [Environment Variables](#environment-variables)
 - [API Endpoints](#api-endpoints)
 - [Sample Quesiton](#sample-questions)
 
