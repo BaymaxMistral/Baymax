@@ -71,6 +71,14 @@ The application exposes the following API endpoints:
 - `GET /`: A welcome message indicating that the API is running.
 - `POST /get_response`: Endpoint to send a message to the chatbot and receive a response. Expects a JSON payload with the user message.
 
+## Sample Questions
+
+- `Question 1`: 
+- `Question 2`:
+- `Question 3`: 
+- `Question 4`:
+- `Question 5`: 
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
